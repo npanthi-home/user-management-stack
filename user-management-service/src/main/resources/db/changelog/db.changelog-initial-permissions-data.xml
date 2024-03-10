@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="insertRoleEntries" author="author">
+        <sql>
+            INSERT INTO role (name) VALUES ('WORKER');
+            INSERT INTO role (name) VALUES ('SUPERVISOR');
+            INSERT INTO role (name) VALUES ('ADMIN');
+        </sql>
+    </changeSet>
+
+    <changeSet id="insertPermissionEntries" author="author">
+        <sql>
+            INSERT INTO permission (role, resource, action, is_permitted) VALUES
+            ('WORKER', 'resource', 'approve', false),
+            ('WORKER', 'resource', 'create', true),
+            ('WORKER', 'resource', 'update', false),
+            ('WORKER', 'resource', 'cancel', false);
+        </sql>
+
+        <sql>
+            INSERT INTO permission (role, resource, action, is_permitted) VALUES
+            ('SUPERVISOR', 'resource', 'approve', true),
+            ('SUPERVISOR', 'resource', 'create', true),
+            ('SUPERVISOR', 'resource', 'update', true),
+            ('SUPERVISOR', 'resource', 'cancel', true);
+        </sql>
+
+        <sql>
+            INSERT INTO permission (role, resource, action, is_permitted) VALUES
+            ('ADMIN', 'resource', 'approve', true),
+            ('ADMIN', 'resource', 'create', true),
+            ('ADMIN', 'resource', 'update', true),
+            ('ADMIN', 'resource', 'cancel', true);
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
