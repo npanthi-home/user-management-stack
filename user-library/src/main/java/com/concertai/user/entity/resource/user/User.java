@@ -1,7 +1,6 @@
 package com.concertai.user.entity.resource.user;
 
 import com.concertai.user.entity.resource.Resource;
-import com.concertai.user.entity.resource.type.ResourceType;
 import jakarta.persistence.*;
 import lombok.*;
 
