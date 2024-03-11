@@ -13,7 +13,7 @@ const getUniqueActionsByResource = (state: RbacState) => {
 
             const actions = resources[resource];
             for (const action in actions) {
-                if (actions[action] && !uniqueActionsByResource[resource].includes(action)) {
+                if (actions[action] !== undefined && !uniqueActionsByResource[resource].includes(action)) {
                     uniqueActionsByResource[resource].push(action);
                 }
             }

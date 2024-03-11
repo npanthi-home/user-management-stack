@@ -13,7 +13,7 @@ interface ActionConfigurationProps {
 const ActionConfigurationView: React.FC<ActionConfigurationProps> = ({ rbac, roles, resource, uniqueActionsByResource, handleCheckboxChange }) => {
     return (
         <React.Fragment>
-            {uniqueActionsByResource[resource]?.map((action) => (
+            {uniqueActionsByResource[resource].map((action) => (
                 <TableRow key={action}>
                     <TableCell>{action}</TableCell>
                     {roles.map((role) => (
