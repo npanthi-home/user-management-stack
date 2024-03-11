@@ -1,4 +1,5 @@
 import {
+  Button,
   Paper,
   Table,
   TableBody,
@@ -10,6 +11,7 @@ import {
 import React from 'react';
 import ResourceConfiguration from './resource/ResourceConfiguration';
 import RbacState from '../redux/rbac/state/RbacState';
+import './RbacConfigurationView.css'; 
 
 
 interface Props {
@@ -22,8 +24,8 @@ interface Props {
 const RbacConfigurationView: React.FC<Props> = ({ rbac, roles, resources, handleSaveClick }) => {
   return (
     <React.Fragment>
-      <TableContainer component={Paper}>
-        <Table>
+      <TableContainer component={Paper} className="table-container">
+        <Table className="custom-table">
           <TableHead>
             <TableRow>
               <TableCell>Resources/Actions</TableCell>
@@ -39,7 +41,8 @@ const RbacConfigurationView: React.FC<Props> = ({ rbac, roles, resources, handle
           </TableBody>
         </Table>
       </TableContainer>
-      <button onClick={() => handleSaveClick()}>Save Configuration</button>
+      <div className="space-after-table"></div>
+      <Button size="large" variant="contained" onClick={() => handleSaveClick()}>Save Configuration</Button>
     </React.Fragment>
 
   );
