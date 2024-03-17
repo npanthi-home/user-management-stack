@@ -2,7 +2,7 @@ package com.concertai.user.management.framework.web.rbac.transformations;
 
 import com.concertai.user.entity.Permission;
 import com.concertai.user.entity.PermissionKey;
-import com.concertai.user.entity.resource.user.RoleType;
+import com.concertai.user.entity.resource.user.rbac.RoleType;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package com.concertai.user.management.adapter.in.http;
 
-import com.concertai.user.entity.resource.user.RoleType;
+import com.concertai.user.entity.resource.user.rbac.RoleType;
 import com.concertai.user.management.framework.web.rbac.transformations.PermissionDtoTransformation;
 import com.concertai.user.management.framework.web.rbac.transformations.PermissionTransformation;
 import com.concertai.user.management.usecase.in.GetPermissions;

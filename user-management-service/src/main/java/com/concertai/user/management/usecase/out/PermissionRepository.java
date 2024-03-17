@@ -1,7 +1,7 @@
 package com.concertai.user.management.usecase.out;
 
 import com.concertai.user.entity.Permission;
-import com.concertai.user.entity.resource.user.RoleType;
+import com.concertai.user.entity.resource.user.rbac.RoleType;
 
 import java.util.List;
 import java.util.Optional;

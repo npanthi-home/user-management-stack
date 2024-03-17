@@ -1,6 +1,6 @@
 package com.concertai.user.entity;
 
-import com.concertai.user.entity.resource.user.RoleType;
+import com.concertai.user.entity.resource.user.rbac.RoleType;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import lombok.*;

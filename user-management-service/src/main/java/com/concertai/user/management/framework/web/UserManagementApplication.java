@@ -8,7 +8,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {
-        "com.concertai.user.management"
+        "com.concertai.user.management",
+        "com.concertai.user.entity"
 })
 @EntityScan("com.concertai.user.entity")
 @EnableJpaRepositories("com.concertai.user.management.framework.database.jpa")

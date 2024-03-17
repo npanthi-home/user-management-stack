@@ -1,6 +1,6 @@
 package com.concertai.user.management.usecase.in;
 
-import com.concertai.user.entity.resource.user.RoleType;
+import com.concertai.user.entity.resource.user.rbac.RoleType;
 import com.concertai.user.management.usecase.out.PermissionRepository;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;

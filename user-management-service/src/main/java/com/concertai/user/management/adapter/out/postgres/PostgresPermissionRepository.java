@@ -1,7 +1,7 @@
 package com.concertai.user.management.adapter.out.postgres;
 
 import com.concertai.user.entity.Permission;
-import com.concertai.user.entity.resource.user.RoleType;
+import com.concertai.user.entity.resource.user.rbac.RoleType;
 import com.concertai.user.management.framework.database.jpa.JpaPermissionRepository;
 import com.concertai.user.management.usecase.out.PermissionRepository;
 import jakarta.inject.Named;

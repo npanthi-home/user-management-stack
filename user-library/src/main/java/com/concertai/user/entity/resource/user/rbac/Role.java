@@ -1,4 +1,4 @@
-package com.concertai.user.entity.resource.user;
+package com.concertai.user.entity.resource.user.rbac;
 
 import jakarta.persistence.*;
 import lombok.*;
